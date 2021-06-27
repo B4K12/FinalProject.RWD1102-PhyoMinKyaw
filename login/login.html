@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login/login.css">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+<body>
+    
+    <div class="wrapper">
+        
+        <div class="sct brand"><h3 style="color: goldenrod;">OneZero</h3></div>
+        <div class="sct login">
+            
+            
+            <form method="GET">
+               <br><br><br><br>
+               
+                
+                <h3>LOGIN</h3>
+                <p style="color: wheat; font-size: 13px;font-weight: 900;">
+                |
+                    <a style="color: goldenrod;" href="../index.html">HOME</a>
+                    |
+                    <a style="color:goldenrod;" href="../product/product.html">PRODUCT</a>
+                    |
+                    <a style="color: goldenrod;" href="../404error/404.html">ABOUT</a>
+                    |
+                    <a style="color: goldenrod;" href="../contact/contact.html">CONTACT</a>
+                    |
+                    <br><br>
+                </p>
+                
+                <input name="email" type="email" id="email" placeholder="Email">
+                <input name="password" type="password" id="password" placeholder="Password">
+                <div class="forgot-remember">
+                        <label class="control control-checkbox">
+                                Remember me
+                                    <input type="checkbox" />
+                                <div class="control_indicator"></div>
+                            </label>
+                    <div class="forgot">
+                            <a href="#">Forgot Password?</a>
+                    </div> 
+                </div>
+                <input name="submit" type="submit" id="send" value="LogIn" onclick="loginCheck();">
+                <p class="text-center">Sign up with<br><i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
+                <div class="social-sign">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+            </form>
+        </div> <!--end login-->
+    </div> <!--end wrapper-->
+
+    <div id="alertBox">
+        Incorrect Username and Password!
+    </div>
+
+    <script type="module" src="../JAVASPRECT/login.js"></script>
+</body>
+</html>
